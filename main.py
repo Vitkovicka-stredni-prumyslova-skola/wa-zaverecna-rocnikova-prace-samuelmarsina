@@ -5,6 +5,22 @@ app = Flask (__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/")
+def home():
+    return render_template("base.htm")
+
+@app.route("/")
+def home():
+    return render_template("menu.htm")
+
+@app.route("/")
+def home():
+    return render_template("head.htm")
+
+@app.route("/")
+def home():
+    return render_template("footer.htm")
+
 if __name__ == "__main__":
     app.run(debug=True) 
     

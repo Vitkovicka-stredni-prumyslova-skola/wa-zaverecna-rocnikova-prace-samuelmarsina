@@ -1,0 +1,27 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.pics img {
+    width: 25px;
+    height: 25px;
+    transition: 0.3s;
+}
+
+.pics img:hover {
+    transform: scale(1.1);
+};
