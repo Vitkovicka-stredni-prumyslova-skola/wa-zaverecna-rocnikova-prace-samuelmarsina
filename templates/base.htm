@@ -7,9 +7,34 @@
     <link rel="stylesheet" href="../static/static.css">
 </head>
 <body>
-    {% include "head.htm" %}
-    {% block content %}{% endblock %}
+    <header>
+        {% block head %}
+        {% endblock %}
+    </header>
+    
+    <main>
+        {% block domovni %}
+        {% endblock %}
+    </main>
 
-    {%include "footer.htm" %}
+    <main>
+        {% block kontakt %}
+        {% endblock %}
+    </main>
+
+    <main>
+        {% block varianti %}
+        {% endblock %}
+    </main>
+
+    <main>
+        {% block lore %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        {% block footer %}
+        {% endblock %}
+    </footer>
 </body>
 </html>

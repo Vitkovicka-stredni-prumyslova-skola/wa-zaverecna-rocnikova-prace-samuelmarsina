@@ -3,15 +3,23 @@ app = Flask (__name__)
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("domovni.htm")
 
 @app.route("/base")
 def base():
     return render_template("base.htm")
 
-@app.route("/menu")
-def menu():
-    return render_template("menu.htm")
+@app.route("/index")
+def index():
+    return render_template("index.html")
+
+@app.route("/lore")
+def lore():
+    return render_template("lore.htm")
+
+@app.route("/varianti")
+def varianti():
+    return render_template("varianti.htm")
 
 @app.route("/head")
 def head():
