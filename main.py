@@ -9,10 +9,6 @@ def home():
 def base():
     return render_template("base.htm")
 
-@app.route("/index")
-def index():
-    return render_template("index.html")
-
 @app.route("/lore")
 def lore():
     return render_template("lore.htm")

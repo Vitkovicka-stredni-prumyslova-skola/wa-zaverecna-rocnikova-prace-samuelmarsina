@@ -218,3 +218,209 @@ a:hover {
         height: 300px;
     }
 }
+
+.variantiinfocontainer,
+.malyinfocontainer,
+.variantilevycontainer,
+.variantipravycontainer,
+.spodnicontainervarianti {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 30px;
+    background: rgba(18, 20, 18, 0.9);
+    border-left: 5px solid #6cff6c;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgba(0, 255, 100, 0.07);
+    transition: 0.3s ease;
+}
+
+.variantiinfocontainer:hover,
+.malyinfocontainer:hover,
+.variantilevycontainer:hover,
+.variantipravycontainer:hover,
+.spodnicontainervarianti:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 28px rgba(0, 255, 100, 0.18);
+}
+
+.variantiinfocontainer,
+.malyinfocontainer,
+.spodnicontainervarianti {
+    text-align: center;
+}
+
+.variantilevycontainer,
+.variantipravycontainer {
+    width: 42%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.variantilevycontainer {
+    margin-left: 5%;
+}
+
+.variantipravycontainer {
+    float: right;
+    margin-right: 5%;
+}
+
+.variantilevycontainer h2,
+.variantipravycontainer h2 {
+    color: #9cff9c;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.variantilevycontainer h3,
+.variantipravycontainer h3 {
+    color: #b8ffb8;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.variantilevycontainer h4,
+.variantipravycontainer h4 {
+    color: #c0c0c0;
+    line-height: 1.7;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.variantilevycontainer img,
+.variantipravycontainer img {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 2px solid rgba(120, 255, 120, 0.2);
+    box-shadow: 0 0 20px rgba(0, 255, 100, 0.15);
+    transition: 0.3s ease;
+}
+
+.variantilevycontainer img:hover,
+.variantipravycontainer img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(120, 255, 120, 0.3);
+}
+
+.spodnicontainervarianti {
+    margin-top: 40px;
+    clear: both;
+}
+
+@media (max-width: 900px) {
+    .variantilevycontainer,
+    .variantipravycontainer {
+        width: 90%;
+        display: block;
+        float: none;
+        margin: 25px auto;
+    }
+
+    .variantilevycontainer h3,
+    .variantipravycontainer h3 {
+        font-size: 1.2rem;
+    }
+
+    .variantilevycontainer img,
+    .variantipravycontainer img {
+        max-width: 100%;
+    }
+}
+
+.kontaktcontainer {
+    width: 90%;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(20, 25, 20, 0.88);
+    border: 1px solid rgba(120, 255, 120, 0.15);
+    border-left: 5px solid #6cff6c;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 255, 100, 0.08);
+    backdrop-filter: blur(4px);
+}
+
+.kontaktcontainer h1 {
+    text-align: center;
+    color: #9cff9c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.kontaktcontainer h3 {
+    text-align: center;
+    color: #bdbdbd;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+.kontaktform {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kontaktform label {
+    color: #d0d0d0;
+    font-weight: bold;
+}
+
+.kontaktform input,
+.kontaktform textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(30, 35, 30, 0.9);
+    border: 1px solid rgba(120, 255, 120, 0.2);
+    border-radius: 8px;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.kontaktform input:focus,
+.kontaktform textarea:focus {
+    outline: none;
+    border-color: #6cff6c;
+    box-shadow: 0 0 10px rgba(120, 255, 120, 0.3);
+}
+
+.kontaktform textarea {
+    resize: vertical;
+    min-height: 180px;
+}
+
+.kontaktform button {
+    margin-top: 10px;
+    padding: 14px;
+    background: #1f5d1f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.kontaktform button:hover {
+    background: #2f8a2f;
+    box-shadow: 0 0 15px rgba(120, 255, 120, 0.4);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+    .kontaktcontainer {
+        width: 95%;
+        padding: 25px;
+    }
+}
