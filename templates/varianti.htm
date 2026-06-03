@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varianti</title>
+{% extends "base.htm" %}
+
+{% block head %}
+    {% include "head.htm" %}
+{% endblock %}
+
+{% block content %}
     <link rel="stylesheet" href="../static/static.css">
 </head>
 <body>
@@ -91,5 +92,8 @@
                 k příběhu, nebo se jen potloukají po chodbách ústavu.</h2>
         </div>  
     </div>
-</body>
-</html>
+{% endblock %}
+
+{% block footer %}
+    {% include "footer.htm" %}
+{% endblock %}

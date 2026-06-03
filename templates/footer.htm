@@ -8,15 +8,14 @@
 </head>
 <body>
 
-    <footer class="footer">
-        <p>® Samuel Marsina 2026 & Red Barrels Inc.</p>
-            <div class="pics">
-                <a href="https://www.instagram.com/marsinaaaa_/"><img src="../pics/Instagram_logo_2016.svg.png" title="Můj Instagram"></a>
-                <a href="https://www.instagram.com/the.redbarrels/"><img src="../pics/Instagram_logo_2016.svg.png" title="Red Barrels Instagram"></a>
-                <a href="https://www.youtube.com/user/redbarrelsgames"><img src="../pics/Youtube_logo.png" title="Red Barrels YouTube"></a>
-                <a href="https://x.com/TheRedBarrels"><img src="../pics/X_logo.jpg" title="Red Barrels Twitter"></a>
-                <a href="https://redbarrelsgames.com/"><img src="../pics/rblogo.jpg" title="Red Barrels Web"></a>
-            </div>
+<footer class="footer">
+    <p>® Samuel Marsina 2026 & Red Barrels Inc.</p>
+        <div class="pics">
+            <a href="https://www.instagram.com/marsinaaaa_/"><img src="{{ url_for('static', filename='pics/Instagram_logo_2016.svg.png') }}" title="Můj Instagram"></a>
+            <a href="https://www.instagram.com/the.redbarrels/"><img src="{{ url_for('static', filename='pics/Instagram_logo_2016.svg.png') }}" title="Red Barrels Instagram"></a>
+            <a href="https://www.youtube.com/@redbarrelsgames"><img src="{{ url_for('static', filename='pics/Youtube_logo.png') }}" title="Red Barrels YouTube"></a>
+            <a href="https://redbarrelsgames.com/"><img src="{{ url_for('static', filename='pics/rblogo.jpg') }}" title="Red Barrels Web"></a>
+        </div>
     </footer>
     
 </body>
