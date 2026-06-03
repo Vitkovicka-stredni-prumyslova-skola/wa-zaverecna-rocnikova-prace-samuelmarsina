@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domů</title>
+{% extends "base.htm" %}
+
+{% block head %}
+    {% include "head.htm" %}
+{% endblock %}
+
+{% block content %}
     <link rel="stylesheet" href="../static/static.css">
-</head>
-<body>
 
 <div class="background">
 
@@ -49,5 +48,9 @@
         </h4>
     </div>
 </div>
-</body>
-</html>
+
+{% endblock %}
+
+{% block footer %}
+    {% include "footer.htm" %}
+{% endblock %}
