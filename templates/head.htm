@@ -4,14 +4,14 @@
 
 <nav class="navbar">
   <div class="logo">
-    <img src="../pics/outlastlogo.png">
+    <img src="{{ url_for('static', filename='pics/outlastlogo.png') }}">
   </div>
 
   <div class="menu">
-    <a href="../templates/domovni.htm">Domů</a>
-    <a href="../templates/kontakt.htm">Kontakt</a>
-    <a href="../templates/varianti.htm">Varianti</a>
-    <a href="../templates/lore.htm">Lore</a>
+    <a href="/">Domů</a>
+    <a href="/kontakt">Kontakt</a>
+    <a href="/varianti">Varianti</a>
+    <a href="/lore">Lore</a>
   </div>
 </nav>
 
