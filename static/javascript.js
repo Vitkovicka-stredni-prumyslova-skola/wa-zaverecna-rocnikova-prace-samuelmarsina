@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 
 			if (resp.ok) {
-				const newUrl = window.location.pathname + '?status=sended';
+				const newUrl = window.location.pathname + '?status=sent';
 				history.replaceState(null, '', newUrl);
-				if (statusDiv) statusDiv.textContent = 'sent';
+				if (statusDiv) statusDiv.textContent = 'Odesláno';
 				form.reset();
 				console.log('Formulář odeslán — server odpověděl OK');
 			} else {
